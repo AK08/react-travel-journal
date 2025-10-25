@@ -1,0 +1,81 @@
+header {
+  background: #f55a5a;
+  display: flex;
+  align-items: center;
+  height: 55px;
+  gap: 1rem;
+  justify-content: center;
+  color: white;
+}
+
+header img {
+  width: 24px;
+}
+
+header h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.entry {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.entry__left {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 4px;
+  /* 
+  we need to use flex shrink here because the P takes too much
+  space and this code helps to keep our image from shinking
+  */
+  flex-shrink: 0;
+}
+
+.entry__left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.entry__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry__right__top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.marker {
+  width: 7px;
+  margin-right: 4px;
+}
+
+.country {
+  font-size: 0.7rem;
+}
+
+.entry__right a {
+  color: #2b283a;
+  font-size: 0.7rem;
+}
+
+.entry__right a:visited {
+  color: #918e9b;
+}
+
+.dates {
+  font-weight: bold;
+}
+
+.entry__text {
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
